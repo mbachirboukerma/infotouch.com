@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+  <!-- Add Font Awesome CDN link here -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Source+Code+Pro:wght@500&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style2.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>iTOUCH</title>
+</head>
+
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" class="bg-ys">
+
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar navbar-dark px-3 mb-3 navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" id="logo">iTOUCH</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" id="buttontoggle" data-bs-target="#navmenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="nav nav-pills navbar-nav ms-auto" id="navbari">
+          <li class="nav-item">
+            <a class="nav-link" href="#about" onclick="scrollToSection(432 , this.id)" id="aabouts" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#courses" onclick="scrollToSection(959.3333129882812 , this.id)" id="acourses">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#events" onclick="scrollToSection(1525.3333740234375 , this.id)" id="aevents">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" onclick="scrollToSection(2212)" id="acontact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!--photo cover-->
+  <div class="container text-center mb-5" style="margin-top: 100px;">
+    <img src="images/cover-face.jpg" alt="cover" style="width: 1000px; max-width: 100%; border-radius: 20px;">
+  </div>
+
+
+
+  <!-- About Section -->
+<div ><h2 id="about"></h2></div>
+<div id="about-section" class="d-flex justify-content-center">
+  <div class="container mt-5">
+    <div class="bg-primary text-light" style="padding: 10px; border-radius: 5px; width: 100%;">
+      <h2 class="m-3">Introducing iTOUCH</h2>
+      <p id="Introducing" class="mb-5">
+        <br>
+        Founded in January 2023, iTOUCH is the pioneering scientific club at École Normale Supérieure de Kouba. Just like its counterpart, the Informatique Club, at École Normale Supérieure de Kouba, iTOUCH is led by a dedicated team of tech enthusiasts with an unwavering commitment to building a community of high-quality developers among the student body.
+        <br><br>
+        The name iTOUCH reflects our commitment to leaving a positive impact on every individual who interacts with our club. We believe in the power of a gentle touch—a personal and meaningful approach to guiding students on their journey towards excellence in computer science and technology. By nurturing talent and promoting innovation, we aim to shape a brighter future for the entire student community at École Normale Supérieure de Kouba.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Courses Section -->
+  <div ><h2 id="courses"></h2></div>
+  <h2 class="text-center mt-5 m-3" id="courses-header">Our Courses Available</h2>
+  <div class="container" id="courses" >
+    <div class="row justify-content-center ms-auto"> <!-- Add justify-content-center to center the columns on smaller screens -->
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+          <img src="images/python course.jpg" alt="Card Image" class="img-fluid">
+          <div class="card-body">
+            <h5 class="card-title">Python course</h5>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#PythonModal">See More</button>
+            <a href="https://forms.gle/qNjTB9pSDWyUJVtp9" target='_blank'><button class="btn btn-outline-primary mt-2">Register for the course Now</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+          <img src="images/design course.jpg" alt="Card Image" class="img-fluid">
+          <div class="card-body">
+            <h5 class="card-title">Design Course</h5>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#DesignModal">See More</button>
+            <a href="https://forms.gle/qNjTB9pSDWyUJVtp9" target='_blank'><button class="btn btn-outline-primary mt-2">Register for the course Now</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+          <img src="images/english course.jpg" alt="Card Image" class="img-fluid">
+          <div class="card-body">
+            <h5 class="card-title">English course</h5>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EnglishModal">See More</button>
+            <a href="https://forms.gle/qNjTB9pSDWyUJVtp9" target='_blank'><button class="btn btn-outline-primary mt-2">Register for the course Now</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+<!-- Modal -->
+<div class="modal fade" id="PythonModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="PythonLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="PythonLabel">Python Course</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/python course.jpg" alt="photo" class="mb-3" style="width:250px">
+        <div class="text-center">
+          <h2 class="black-text">Python Course By Alaa filali</h2>
+          <p class="black-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <p class="black-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <p class="black-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p><br>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="https://forms.gle/qNjTB9pSDWyUJVtp9" target= '_blank'><button type="button" class="btn btn-primary">Regist now</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="DesignModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="DesignLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="PythonLabel">Design Course</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/design course.jpg" alt="photo" class="mb-3" style="width:250px">
+        <div class="text-center">
+          <h2 class="black-text">Design Course By Abdelmodjib</h2>
+          <p class="black-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <p class="black-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <p class="black-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p><br>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="https://forms.gle/qNjTB9pSDWyUJVtp9" target= '_blank'><button type="button" class="btn btn-primary">Regist now</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="EnglishModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="EnglishLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="PythonLabel">English Course</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/english course.jpg" alt="photo" class="mb-3" style="width:250px">
+        <div class="text-center">
+          <h2 class="black-text">English Course By Hassina</h2>
+          <p class="black-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <p class="black-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <p class="black-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p><br>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="https://forms.gle/qNjTB9pSDWyUJVtp9" target= '_blank'><button type="button" class="btn btn-primary">Regist now</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <!-- Events Section -->
+  <div ><h2 id="events"></h2></div>
+  <h2 class="text-center mt-5">Our Events</h2>
+  <div class="container mx-md-auto mx-3" id="events">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <!-- Carousel Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <!-- Carousel Items -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/opening.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/pixel.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/mouh talk.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  
+
+
+
+<!-- Contact us-->
+<section class="ftco-section img bg-ys mt-5" id="contact">
+  <div class="container" id="contact">
+    <div class="row justify-content-center">
+      <div class="col-md-6 text-center mb-5">
+        <h2 class="heading-section">Contact Us</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-11">
+        <div class="wrapper">
+          <div class="row no-gutters justify-content-between">
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <div class="info-wrap w-100 p-5">
+                <h3 class="mb-4">Contact us</h3>
+                <div class="dbox w-100 d-flex align-items-start">
+                  <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="fa fa-map-marker"></span>
+                  </div>
+                  <div class="text pl-4">
+                    <p><span>Address:</span> C95 , VIEUX KOUBA , ALGER</p>
+                  </div>
+                </div>
+                <div class="dbox w-100 d-flex align-items-start">
+                  <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="fa fa-phone"></span>
+                  </div>
+                  <div class="text pl-4">
+                    <p><span>Phone:</span> <a href="tel://1234567920">+213 791315485</a></p>
+                  </div>
+                </div>
+                <div class="dbox w-100 d-flex align-items-start">
+                  <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="fa fa-paper-plane"></span>
+                  </div>
+                  <div class="text pl-4">
+                    <p><span>Email:</span> <a href="mailto:info@yoursite.com">contact@infotouch.com</a></p>
+                  </div>
+                </div>
+                <div class="dbox w-100 d-flex align-items-start">
+                  <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="fa fa-globe"></span>
+                  </div>
+                  <div class="text pl-4">
+                    <p><span>Website</span> <a href="#">www.infotouch.com</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="contact-wrap w-100 p-md-5 p-4">
+                <h3 class="mb-4">Get in touch</h3>
+                <div id="form-message-warning" class="mb-4"></div> 
+                <div id="form-message-success" class="mb-4">
+                  Your message was sent, thank you!
+                </div>
+                <form method="POST" id="contactForm" name="contactForm">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                      </div>
+                    </div>
+                    <div class="col-md-12"> 
+                      <div class="form-group">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <textarea name="message" class="form-control" id="message" cols="30" rows="5" placeholder="Message"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input type="submit" value="Send Message" class="btn btn-primary">
+                        <div class="submitting"></div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- footer -->
+  <footer class="bg-ys text-center text-white mt-3">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://web.facebook.com/profile.php?id=100087711844020" target='_blank' role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://web.facebook.com/profile.php?id=100087711844020" target='_blank' role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://web.facebook.com/profile.php?id=100087711844020" target='_blank' role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://web.facebook.com/profile.php?id=100087711844020" target='_blank' role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://web.facebook.com/profile.php?id=100087711844020" target='_blank' role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+  
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://web.facebook.com/profile.php?id=100087711844020" target='_blank' role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:
+      <a class="text-white" href="https://infotouch.com/">iTOUCH.com</a>
+    </div>
+    <!-- Copyright -->
+    
+  </footer>
+
+
+  <!-- JavaScript and other scripts -->
+  <script src="/js/popper.min.js"></script>
+  <script src="/js/jquery-3.7.0.js"></script>
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

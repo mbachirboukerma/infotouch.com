@@ -1,0 +1,154 @@
+*{
+    color: rgb(202, 202, 202);
+}
+h2{
+    color: white;
+}
+
+.bg-ys{
+    background: #15151e;
+}
+.bsg-black{
+    background: rgb(120, 21, 21);
+}
+.card {
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    display: flex;
+    transition: 0.4s ease;
+  }
+
+.card:hover{
+  transform: scale(1.1);
+}
+#imagescarousel img{
+    height: 500px;
+    width: 30px;
+}
+.backgroundn{
+    background: rgb(11, 10, 14);
+}
+#navbari{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+.contaiiner{
+    width: 60%;
+    margin: auto;
+}
+
+.contaiiner img{
+    border-radius: 20px;
+
+}
+
+#Introducing{
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0;
+}
+ #logo{
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+ }
+  .row{
+    justify-content: space-around;
+  }
+
+  #about h1{
+    color: white;
+  }
+  
+ 
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 80%; /* You can adjust this value as per your needs */
+    height: 400px; /* You can adjust this value as per your needs */
+  }
+
+
+  .card-body{
+    text-align: center;
+
+  }
+  .popup-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .black-text{
+    color: #15151e;
+  }
+  
+
+  .everything {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Use space-evenly to evenly space the sections */
+    align-items: center; /* Center the sections horizontally */
+    height: 600vh;
+  }
+  
+
+  /* Custom CSS for the active link */
+.nav-item .nav-link.active,
+.nav-item .nav-link:active {
+  font-weight: 700;
+  background: transparent;
+}
+
+
+
+  /* CSS for large screens and above */
+@media (min-width: 992px) {
+  /* Reduce the height of the carousel */
+  #carouselExampleCaptions .carousel-item img {
+    max-height: 400px; /* You can adjust this value as per your preference */
+  }
+
+  /* Set a maximum width for the container */
+  #events .container {
+    max-width: 800px; /* You can adjust this value as per your preference */
+    margin-left: auto; /* Center the container horizontally */
+    margin-right: auto;
+  }
+}
+
+/* CSS for small screens and below (optional) */
+@media (max-width: 767px) {
+  /* Reduce the height of the carousel further for smaller screens */
+  #carouselExampleCaptions .carousel-item img {
+    max-height: 250px; /* You can adjust this value as per your preference */
+  }
+}
+
+/* Custom CSS for responsiveness and width */
+@media (min-width: 992px) {
+  /* Set width to 80% for normal pages on large screens */
+  #about-section .container {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  /* Set width to 100% on smaller screens */
+  #about-section .container {
+    width: 100%;
+  }
+}
+
