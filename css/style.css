@@ -5,8 +5,15 @@ h2{
     color: white;
 }
 
+h2:hover{
+  text-shadow: cyan 1px 0, red -1px 0;
+}
+
 .bg-ys{
     background: #15151e;
+}
+.bg-yss{
+  background: #2d2d35;
 }
 .bsg-black{
     background: rgb(120, 21, 21);
@@ -111,13 +118,18 @@ h2{
   background: transparent;
 }
 
+.scaling:hover{
+  transform: scale(1.1);
+}
 
 
   /* CSS for large screens and above */
 @media (min-width: 992px) {
   /* Reduce the height of the carousel */
   #carouselExampleCaptions .carousel-item img {
-    max-height: 400px; /* You can adjust this value as per your preference */
+    max-height: 400px;
+    max-width: 60%;
+    margin: auto; /* You can adjust this value as per your preference */
   }
 
   /* Set a maximum width for the container */

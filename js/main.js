@@ -33,6 +33,7 @@ buttontoggle.onclick=function(){
   navbar.style.background = '#15151e'
 }
 
+//
 
 function scrollToSection(offset, targetId) {
   // Close the toggle when clicking a link in a small page
@@ -54,3 +55,4 @@ function scrollToSection(offset, targetId) {
     });
   }
 }
+
